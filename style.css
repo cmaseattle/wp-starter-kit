@@ -1,0 +1,32 @@
+/*
+Theme Name: WP Starter
+Description: Get rolling.
+Author: Creative Media Alliance
+Author URI: http://creativemediaalliance.com
+Version: 1.0
+Tags: web development
+*/
+
+/* your theme's styles */
+body {
+	padding:0;
+	margin:0;
+	background-color:orange;
+}
+
+/* media queries */
+@media(max-width:1199px){
+	body {
+		background-color:yellow;
+	}
+}
+@media(max-width:991px){
+	body {
+		background-color:blue;
+	}
+}
+@media(max-width:767px){
+	body {
+		background-color:red;
+	}
+}
