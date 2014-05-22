@@ -5,15 +5,16 @@
 <!-- bare bones loop -->
 <?php
 $query = new WP_Query( 
-	array( 
-		/* your arguments */ 
+	array(
+		'post_type'	=> 'post' 
+		/* your arguments */
 	)
 );
 if ( $query->have_posts() ) : ?>
 	<!-- the loop -->
 	<?php while ( $query->have_posts() ) : $query->the_post(); ?>
-		<?php the_title(); ?>
-		<?php the_content(); ?>
+		<a href="<?php the_permalink() ?>"><?php the_title(); ?></a> - <?php the_time('l, F j, Y') ?>
+		<?php the_excerpt(); ?>
 	<?php endwhile; ?>
 	<!-- end of the loop -->
 	<?php wp_reset_postdata(); ?>

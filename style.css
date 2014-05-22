@@ -9,9 +9,8 @@ Tags: web development
 
 /* your theme's styles */
 body {
-	padding:0;
-	margin:0;
 	background-color:orange;
+	font-family:arial;
 }
 
 /* media queries */
