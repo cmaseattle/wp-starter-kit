@@ -10,8 +10,9 @@
 </head>
 
 <body>
+	<h1><?php bloginfo('name'); ?></h1>
+	<p><?php bloginfo('description'); ?></p>
 	<nav>
-		<h1><?php bloginfo('name'); ?></h1>
 		<?php 
 		wp_nav_menu( array(
 			'container' => false,
