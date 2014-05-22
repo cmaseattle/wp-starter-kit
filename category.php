@@ -7,7 +7,7 @@
 			<h1 class="page-title">
 					<?php
 						if ( is_category() ) :
-							printf( __( 'Category: %s', 'twentyfourteen' ), single_cat_title( '', false ) );
+							printf( __( 'Category: %s', 'wordpress-starter' ), single_cat_title( '', false ) );
 						else :
 							_e( 'Archives', 'wordpress_starter' );
 						endif;

@@ -6,8 +6,8 @@
 		<div class="main">
 			<h1 class="page-title">
 					<?php
-						if ( is_month() ) :
-							printf( __( '%s', 'wordpress_starter' ), get_the_date( _x( 'F Y', 'archive format', 'wordpress_starter' ) ) );
+						if ( is_tag() ) :
+							printf( __( 'Tag: %s', 'twentyfourteen' ), single_tag_title( '', false ) );
 						else :
 							_e( 'Archives', 'wordpress_starter' );
 						endif;

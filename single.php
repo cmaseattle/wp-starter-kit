@@ -5,6 +5,7 @@
 	<div class="container">
 		<div class="main">
 			<h1><?php the_title(); ?></h1>
+			<?php the_tags() ?>
 			<?php the_content(); ?>
 		</div>
 		<div class="sidebar">
