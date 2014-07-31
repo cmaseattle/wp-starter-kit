@@ -7,7 +7,8 @@
 			<h1><?php the_title(); ?></h1>
 			<?php the_tags() ?>
 			<p>Post by: <?php the_author_posts_link() ?></p>
-			<?php the_content(); ?>
+			<?php the_content();
+			wordpress_starter_pagination(); ?>
 		</div>
 		<div class="sidebar">
 			<?php get_sidebar(); ?>
