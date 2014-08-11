@@ -1,5 +1,5 @@
 <?php
-// excerpt length
+// custom excerpt length
 function custom_excerpt_length( $length ) {
 	return 80;
 }
